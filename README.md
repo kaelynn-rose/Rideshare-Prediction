@@ -58,10 +58,10 @@ We trained a logistic regression model on a train/test split using K-fold valida
 
 Here is an example cost matrix created with estimated values for the results of customers staying with the service or churning. It is used to produce the profit curve below:
 
-|        | Predicted  | Churn | Stay |
+| ------ | Predicted  | Churn | Stay |
 | Actual | ---------- | ----  | ---- |
-| Churn  |            |$0     | -$10 |
-| Stay   |            | $5    | $10  |
+| Churn  | ---------- |$0     | -$10 |
+| Stay   | ---------- | $5    | $10  |
 
 
 ![plot](./figures/profit_curve_logistic_regression.png)
