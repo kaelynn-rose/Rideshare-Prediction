@@ -33,7 +33,21 @@ To clean the dataset, we:
 
 We conducted preliminary exploratory data analysis on the dataset by creating scatter matrix visualizations and histograms to visualize correlations between features. 
 
-We found that weekday ridership resulted in more rides, possibly because weekday riders used the rideshare service to get to work rather than just taking occasional weekend trips:
+We found that weekday ridership tended to result in more rides, possibly because weekday riders used the rideshare service to get to work rather than just taking occasional weekend trips:
 
 ![plot](./figures/weekday_riders.png)
 
+We also found that surge pricing tended to result in less trips in the first 30 days, perhaps reducing rider retention: 
+
+![plot](./figures/surge_pricing.png)
+
+Interestingly, higher driver ratings were correlated with higher trip distance:
+
+![plot](./figures/driver_ratings.png)
+
+## Supervised Learning Models
+
+We trained and tested three different supervised learning classification models: 
+* Logistic Regression
+* Random Forest Classifier
+* Gradient Boosting Classifier
