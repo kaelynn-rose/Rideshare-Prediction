@@ -62,5 +62,27 @@ We trained a logistic regression model on a train/test split using K-fold valida
 
 ### Random Forest Classifier
 
+We trained a random forest classifier model using a train/test split and optimized the model by trying suites of different values for number of estimators, max depth, minimum samples per split, minimum samples per leaf, and max features. Our optimized model had an accuracy of 0.7726, a precision of 0.7192, and a recall of 0.6494 when tested on the test set.
+
+We calculated feature importances for our random forest classifier model using the Mean Decrease Accuracy:
+
+![plot](./figures/feature_importances_RF.png)
+
 
 ### Gradient Boosting Classifier
+
+We trained a gradient boosting classifier model using a train/test split and optimized the model by conducting a grid search over several chosen values for each hyperparameters, including loss type, learning rate, number of estimators, min samples per leaf, and max depth to find the best model. Our grid-search optimized model had an accuracy of 0.7880, a precision of 0.7485, and a recall of 0.6612.
+
+To demonstrate the effect of different learning rates on this type of mdoel, we plotted the training error vs testing error for different learning rates. Since we only used 100 trees, this does not give the model time to access the benefits of the slower learning rates.
+
+![plot](./figures/learning_rate.png)
+
+## Best Model: Gradient Boosting Classifier
+
+The best model in terms of recall score was the gradient boosting classifier. 
+
+We calculated relative feature importances for our random forest classifier model using the Mean Decrease Impurity, which must be analyzed cautiously as this method is likely to assign numerical values higher importance than categorical variables, since numerical variables have more frequent opportunities for use in the model but do not necessarily have higher importance overall:
+
+![plot](./figures/feature_importances_gradient_boosting.png)
+
+To improve this model, we would conduct more feature engineering and hyperparameter tuning to improve the recall score to the point where it would be useful in a production setting.
