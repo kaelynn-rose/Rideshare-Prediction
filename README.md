@@ -63,6 +63,12 @@ Here is an example cost matrix created with estimated values for the results of 
 | Churn  |            |$0     | -$10 |
 | Stay   |            | $5    | $10  |
 
+| Predicted | Churn | Stay |
+| Actual    |       |      |
+|-----------|-------|------|
+| Churn     | $0    | -$10 |
+| Stay      | +$5   | +$10 |
+
 
 ![plot](./figures/profit_curve_logistic_regression.png)
 
