@@ -1,4 +1,4 @@
-# Rideshare-Prediction Using Supervised Learning
+# Rideshare Prediction Using Supervised Learning
 
 We are interested in predicting rider retention for a ride-sharing company (Company X, data is not public). We utilize a dataset collected in 2014 to train and test supervised learning classification models to determine whether a rider is active or inactive. A rating of 'inactive' could be used to target additional promotional materials at inactive riders, to help increase retention rates for the company. The full dataset contains data for 50,000 riders, with features including:
 
