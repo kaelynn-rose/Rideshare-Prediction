@@ -56,11 +56,13 @@ We trained and tested three different supervised learning classification models:
 
 We trained a logistic regression model on a train/test split using K-fold validation, and tested the model to get an accuracy of 0.7185, a precision of 0.6752, and a recall of 0.5025. We focus on recall as being the best indicator of model predition success, as recall shows us the number of false negatives the model produces. We want to minimize the number of false negatives to prevent rider churn. 
 
+Here is an example cost matrix created with estimated values for the results of customers staying with the service or churning. It is used to produce the profit curve below:
+
 | Predicted  | Churn | Stay |
 | ---------- | ----- | ---- |
 | Actual     | ----- | ---- |
-| Churn      | ----- | ---- |
-| Stay       | ----- | ---- |
+| Churn      | $0    | -$10 |
+| Stay       | $5    | $10  |
 
 
 ![plot](./figures/profit_curve_logistic_regression.png)
