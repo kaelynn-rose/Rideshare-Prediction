@@ -86,3 +86,5 @@ We calculated relative feature importances for our random forest classifier mode
 ![plot](./figures/feature_importances_gradient_boosting.png)
 
 To improve this model, we would conduct more feature engineering and hyperparameter tuning to improve the recall score to the point where it would be useful in a production setting.
+
+This case study was conducted by Chun Liu, Alek Sanchez, and Kaelynn Rose.
